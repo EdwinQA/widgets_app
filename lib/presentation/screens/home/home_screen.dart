@@ -32,6 +32,14 @@ class _HomeView extends StatelessWidget {
           leading: Icon(menuItem.icon, color: colors.primary),
           trailing:
               Icon(Icons.arrow_forward_ios_rounded, color: colors.primary),
+          onTap: () {
+            //Navigator.of(context).push(
+            //  MaterialPageRoute(
+            //    builder: (context) => const ButtonScreen(),
+            //  ),
+            //);
+            Navigator.pushNamed(context, menuItem.link);
+          },
         );
       },
     );
